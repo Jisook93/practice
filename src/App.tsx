@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import CheckBox from "./CheckBox";
+import Text from "./text";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CheckBox></CheckBox>
+      <Text>Hello world</Text>
+      <div className="mainContainer">
+        <div className="appContainer">
+          <input
+            type="text"
+            className="inputText"
+            placeholder="내용을 입력 후 엔터"
+          ></input>
+        </div>
+      </div>
+    </>
   );
-}
-
+};
 export default App;
